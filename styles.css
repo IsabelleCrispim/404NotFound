@@ -7,87 +7,57 @@
 body {
     font-family: 'Space Mono', monospace;
     font-size: 1.125rem;
+    height: 100vh;
 }
-
-.container {
-    max-height: 100vh;
-}
-
 h1 {
     font-size: 1.5rem;
 }
-
 h2 {
     font-size: 1.3rem;
 }
-
 h1,
 h2 {
     font-family: 'Inconsolata', monospace;
 }
 
-header {
-    margin: 1em 0;
-}
-
 .container {
     width: 1200px;
     max-width: 90%;
-    margin: 0 auto;
-    min-height: calc(100vh - 5rem);
-}
-
-.container-main {
+    margin: 2em auto;
     
-
 }
-
-
-.container-flex {
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    max-width: 100%;
-    
-
-}
-
 
 img {
     display: block;
     max-width: 100%;
 
 }
-
-.box-text {
-    margin-top: 10% 0;
-
-}
-
-.box-text p {
-    margin: 2% 0 4% 0
-}
-
 span {
     font-size: 10px;
-
 }
+
+.box-image {
+  width: 80%;
+    
+    
+}
+.box-text p {
+    margin: 1em 0;
+    width: 80%
+}
+
 .box-image span {
     display: block;
     text-align: center;
 }
-
-
 .btn {
     display: inline-block;
     background-color: #FE6847;
-    width: 13rem;
+    width: 10rem;
     text-align: center;
     color: #fff;
     font-size: 0.875rem;
-    padding: 1.4em;
+    padding: 1em;
     text-decoration: none;
     text-transform: uppercase;
 }
@@ -102,45 +72,49 @@ footer {
     font-size: 0.7rem;
     height: 2rem;
 }
-
 footer p {
     text-align: center;
 }
-
-
-
 @media (min-width: 768px) {
 
     h2{
-        font-size: 30px;
+        font-size: 2.5rem;
     }
+    
     .container-main {
-        max-width: 60%;
-        margin: auto;
-
+       max-width: 70%;
+        
+        
     }
-
-    .container-flex {
-        flex-direction: row;
-    }
-
-    .col+.col {
-        margin-left: 2rem;
-    }
-
-    .box-image {
-        max-width: 60%
-    }
-
-    .col-flex {
+    .row-flex {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: space-between;
-        min-height: 100%;
     }
+    .box-image {
+     
+        width: 40%;
+       
+        
+    }
+    .box-text {
+        width: 45%;
+        align-self: center;
+        font-size: 1.5rem;
+    }
+
+    
+    
+    .box-text p {
+        margin-bottom: 3em;
+    }
+
 
     footer {
         margin-top: 2em;
+    }
+    .btn {
+       float: right;
     }
 
 }
